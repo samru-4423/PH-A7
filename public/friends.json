@@ -9,7 +9,7 @@
     "tags": ["college", "close friend"],
     "bio": "Met during university. We used to work on assignments and explore new cafes together.",
     "goal": 14,
-    "next_due_date": "2026-09-25"
+    "next_due_date": "Sep 25,2026"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "tags": ["school", "best friend"],
     "bio": "We have known each other since school and still catch up regularly over coffee.",
     "goal": 14,
-    "next_due_date": "2026-10-01"
+    "next_due_date": "Oct 01,2026"
   },
   {
     "id": 3,
@@ -33,7 +33,7 @@
     "tags": ["university", "gaming"],
     "bio": "A university friend who shares my interest in gaming, technology, and late-night conversations.",
     "goal": 21,
-    "next_due_date": "2026-09-27"
+    "next_due_date": "Sep 27,2026"
   },
   {
     "id": 4,
@@ -45,7 +45,7 @@
     "tags": ["work", "close friend"],
     "bio": "Met at work a few years ago. We often discuss career plans, movies, and weekend trips.",
     "goal": 14,
-    "next_due_date": "2026-10-10"
+    "next_due_date": "Oct 10,2026"
   },
   {
     "id": 5,
@@ -57,7 +57,7 @@
     "tags": ["school", "sports"],
     "bio": "An old school friend and former cricket teammate. We still meet whenever everyone is back in town.",
     "goal": 30,
-    "next_due_date": "2026-09-28"
+    "next_due_date": "Sep 28,2026"
   },
   {
     "id": 6,
@@ -69,7 +69,7 @@
     "tags": ["college", "travel"],
     "bio": "We became friends in college and have travelled together to several places around Bangladesh.",
     "goal": 14,
-    "next_due_date": "2026-10-03"
+    "next_due_date": "Oct 03,2026"
   },
   {
     "id": 7,
@@ -81,7 +81,7 @@
     "tags": ["childhood friend", "close friend"],
     "bio": "We grew up in the same neighborhood and have stayed friends since childhood.",
     "goal": 30,
-    "next_due_date": "2026-09-14"
+    "next_due_date": "Sep 14,2026"
   },
   {
     "id": 8,
@@ -93,7 +93,7 @@
     "tags": ["university", "books"],
     "bio": "A university friend who enjoys reading, trying new restaurants, and discussing interesting ideas.",
     "goal": 14,
-    "next_due_date": "2026-10-05"
+    "next_due_date": "Oct 05,2026"
   },
   {
     "id": 9,
@@ -105,7 +105,7 @@
     "tags": ["work", "football"],
     "bio": "A former colleague who enjoys football, photography, and exploring new places around the city.",
     "goal": 21,
-    "next_due_date": "2026-10-05"
+    "next_due_date": "Oct 05,2026"
   },
   {
     "id": 10,
@@ -117,6 +117,6 @@
     "tags": ["college", "music"],
     "bio": "We met in college and bonded over music, concerts, and long conversations about life.",
     "goal": 14,
-    "next_due_date": "2026-10-09"
+    "next_due_date": "Oct 09,2026"
   }
 ]
