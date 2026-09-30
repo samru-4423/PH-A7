@@ -77,7 +77,7 @@ function Stats() {
     }, []);
 
     return (
-        <div className="bg-white p-8 rounded-xl">
+        <div className="bg-white p-4 lg:p-8 rounded-xl">
             <h2 className="text-xl font-semibold">By Interaction Type</h2>
             <PieChart
                 style={{

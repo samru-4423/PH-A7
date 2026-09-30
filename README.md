@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Friend Activity Tracker
 
-## Getting Started
+## Description
+A modern **Next.js Friend Activity Tracker** that allows users to manage and monitor their interactions with friends. The application records Call, Text, and Video activities, displays them in a timeline, and provides activity statistics through an interactive pie chart.
 
-First, run the development server:
+## Technologies Used
 
-```bash
+- **Next.js** – React framework for building the application
+- **React.js** – For creating reusable UI components
+- **Tailwind CSS** – For styling and responsive design
+- **DaisyUI** – For UI components such as dropdowns
+- **Recharts** – For displaying activity statistics
+- **React Icons** – For activity and interface icons
+- **LocalStorage** – For storing activity data in the browser
+- **JavaScript (ES6+)** – Application logic and functionality
+
+## Key Features
+
+### 1. 📅 Activity Timeline
+Records and displays recent **Call, Text, and Video** activities with the friend's name and activity date. New activities automatically appear at the top of the timeline.
+
+### 2. 🔍 Search & Filter
+Users can search activities by **friend name** and filter the timeline by activity type such as **Call, Text, Video, or All**.
+
+### 3. 📊 Activity Statistics
+Provides an interactive **pie chart** showing the total number of Call, Text, and Video activities based on the data stored in the application.
+
+## Installation
+
+Clone the repository:
+
+git clone YOUR_REPOSITORY_URL
+
+
+Go to the project directory:
+
+cd YOUR_PROJECT_NAME
+
+
+Install dependencies:
+
+npm install
+
+
+Start the development server:
+
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Open your browser and visit:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+http://localhost:3000
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## 👨‍💻 Author
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Md. Samir Ansari**
