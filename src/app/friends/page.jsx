@@ -33,9 +33,9 @@ const Friends = () => {
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                     {
-                        friends.map(friend =>
+                        friends.map((friend, index) =>
                             <Link href={`/friends/${friend.id}`}>
-                                <div key={friend.id} className="card bg-white">
+                                <div key={index} className="card bg-white">
                                     <div className="flex items-center justify-center">
                                         <Image
                                             src={friend.picture}

@@ -1,10 +1,8 @@
+import TimelineDetails from "@/app/timeline/page";
+import CheckInButton from "@/components/CheckInButton";
 import Image from "next/image";
-import Link from "next/link";
-import { CiVideoOn } from "react-icons/ci";
 import { HiOutlineBellSnooze } from "react-icons/hi2";
 import { IoArchiveOutline } from "react-icons/io5";
-import { LuPhoneCall } from "react-icons/lu";
-import { MdOutlineTextsms } from "react-icons/md";
 import { RiDeleteBin5Line } from "react-icons/ri";
 
 
@@ -13,13 +11,13 @@ const FriendDetails = async ({ params }) => {
     const res = await fetch("http://localhost:3000/friends.json");
     const friends = await res.json();
 
-    const friend = friends.find(friend => friend.id.toString() === friendId);
+    const friend = friends.find((friend) => friend.id.toString() === friendId);
     console.log("FriendInfo", friend);
 
     return (
-        <div className="bg-gray-100 py-15">
-            <div className="w-[70%] mx-auto">
-                <div className="grid grid-cols-3 grid-rows-3 p-3 gap-4">
+        <div className="bg-gray-100 py-5 lg:py-15">
+            <div className="w-[90%] lg:w-[70%] mx-auto">
+                <div className="grid grid-cols-1 grid-rows-1 lg:grid-cols-3 lg:grid-rows-3 p-3 gap-4">
                     {/* <div className=""> */}
                     <div className="col-span-1 row-span-2 bg-white py-5">
                         <div className="flex items-center justify-center">
@@ -73,7 +71,7 @@ const FriendDetails = async ({ params }) => {
                     </div>
                     {/* </div> */}
                     <div className="col-span-2 row-span-1 ">
-                        <div className="grid grid-cols-1 bg-white p-10 rounded-[5px] h-full">
+                        <div className="grid grid-cols-1 bg-white p-5 lg:p-10 rounded-[5px] h-full">
                             <div className="flex justify-between pb-3">
                                 <h2 className="text-green-600 text-2xl ">Relationship Goal</h2>
                                 <button className="btn bg-gray-200 border-none text-black shadow-none w-[70px]">Edit</button>
@@ -95,22 +93,32 @@ const FriendDetails = async ({ params }) => {
                         </div>
                     </div>
                     <div className="col-span-2 row-span-1 bg-white p-8 rounded-[5px]">
-                        <h2 className="text-green-600 text-2xl pb-5">Quick Check-In</h2>
-                        <div className="grid grid-cols-3 gap-4 text-center ">
-                            <Link href={`/timeline/${friend.id}`}>
-                                <div className="bg-gray-200 py-10 rounded-[5px]  ">
-                                    <p className="text-[16px] font-semibold flex items-center justify-center"><LuPhoneCall className="text-[22px] mr-2" /> Call</p>
-                                </div>
-                            </Link>
-                            <div className="bg-gray-200 py-10 rounded-[5px] ">
-                                <p className="text-[16px] font-semibold flex items-center justify-center"><MdOutlineTextsms className="text-[22px] mr-2" /> Text</p>
-                            </div>
-                            <div className="bg-gray-200 py-10 rounded-[5px] ">
-                                <p className="text-[16px] font-semibold flex items-center justify-center"><CiVideoOn className="text-[22px] mr-2" /> Video</p>
-                            </div>
+
+                        <h2 className="text-green-600 text-2xl pb-5">
+                            Quick Check-In
+                        </h2>
+
+                        <div className="grid grid-cols-3 gap-4 text-center">
+
+                            <CheckInButton
+                                friend={friend}
+                                type="Call"
+                            />
+
+                            <CheckInButton
+                                friend={friend}
+                                type="Text"
+                            />
+
+                            <CheckInButton
+                                friend={friend}
+                                type="Video"
+                            />
+
                         </div>
                     </div>
                 </div>
+                {/* <TimelineDetails friendId={friend.id}></TimelineDetails> */}
             </div>
         </div>
     );
