@@ -25,7 +25,7 @@ const CheckInButton = ({ friend, type }) => {
                 email: friend.email,
             },
         };
-        console.log("new activity", newActivity)
+        //console.log("new activity", newActivity)
 
         existingActivities.push(newActivity);
 

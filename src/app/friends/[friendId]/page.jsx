@@ -1,4 +1,5 @@
 // import TimelineDetails from "@/app/timeline/page";
+import friends from "./../../../../public/friends.json";
 import CheckInButton from "@/components/CheckInButton";
 import Image from "next/image";
 import { HiOutlineBellSnooze } from "react-icons/hi2";
@@ -8,11 +9,9 @@ import { RiDeleteBin5Line } from "react-icons/ri";
 
 const FriendDetails = async ({ params }) => {
     const { friendId } = await params;
-    const res = await fetch("http://localhost:3000/friends.json");
-    const friends = await res.json();
 
     const friend = friends.find((friend) => friend.id.toString() === friendId);
-    console.log("FriendInfo", friend);
+    //console.log("FriendInfo", friend);
 
     return (
         <div className="bg-gray-100 py-5 lg:py-15">

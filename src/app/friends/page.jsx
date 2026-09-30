@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const Friends = () => {
     const { friends } = useFriends();
-    console.log("Friends are", friends);
+    //console.log("Friends are", friends);
 
     return (
         <div className="w-[70%] mx-auto">
