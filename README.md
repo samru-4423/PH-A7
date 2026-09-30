@@ -29,12 +29,12 @@ Provides an interactive **pie chart** showing the total number of Call, Text, an
 
 Clone the repository:
 
-git clone YOUR_REPOSITORY_URL
+git clone "repository link you have copied"
 
 
 Go to the project directory:
 
-cd YOUR_PROJECT_NAME
+cd "project_name"
 
 
 Install dependencies:
