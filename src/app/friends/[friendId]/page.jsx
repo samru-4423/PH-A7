@@ -1,4 +1,4 @@
-import TimelineDetails from "@/app/timeline/page";
+// import TimelineDetails from "@/app/timeline/page";
 import CheckInButton from "@/components/CheckInButton";
 import Image from "next/image";
 import { HiOutlineBellSnooze } from "react-icons/hi2";

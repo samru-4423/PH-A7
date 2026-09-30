@@ -9,12 +9,6 @@ import { FaRegCheckCircle } from "react-icons/fa";
 const CheckInButton = ({ friend, type }) => {
 
     const handleClick = () => {
-        // console.log("CHECKIN friend:", friend);
-        // console.log("CHECKIN friend:", friend?.friend);
-        // console.log("CHECKIN friend.id:", friend?.id);
-        // console.log("CHECKIN friend.name:", friend?.name);
-        // console.log("CHECKIN friend.email:", friend?.email);
-        // console.log("CHECKIN friend.friend:", friend?.friend);
 
         const existingActivities = JSON.parse(
             localStorage.getItem(`timeline-${friend.id}`) || "[]"
@@ -23,7 +17,7 @@ const CheckInButton = ({ friend, type }) => {
 
         const newActivity = {
             type: type,
-            date: new Date().toISOString().split("T")[0],
+            date: new Date().toISOString(),
             friend: {
                 id: friend.id,
                 name: friend.name,
@@ -40,7 +34,6 @@ const CheckInButton = ({ friend, type }) => {
             JSON.stringify(existingActivities)
         );
 
-        // Tell TimelineDetails that a new activity was added
         window.dispatchEvent(new Event("activityAdded"));
 
         toast(
